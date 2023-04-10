@@ -37,9 +37,7 @@
 .logo-header-nav{
     display: flex;
     align-items: center;
-    
-
-}
+    }
 
 .header-nav{
     margin: 0 auto;
@@ -87,18 +85,13 @@
 
 
 
-.nav-cont{
-    display: flex;
-}
+
 
 .header-container{
     display: flex;
     align-items: center;
     
-        
-      
-    
-}
+    }
     
 
 address {
