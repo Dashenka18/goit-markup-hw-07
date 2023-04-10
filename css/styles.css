@@ -96,7 +96,7 @@ letter-spacing: 0.02em;
 }
 
 
-/* MENU FOR PHONE */
+/*  FOR PHONE */
 
 @media screen and (max-width:767px) {
     .menu-btn{
@@ -308,10 +308,81 @@ letter-spacing: 0.02em;
         height: 8px;
         fill: var(--brand-color);
     }
+
+
+    /* hero-phone */
+
+    .hero {
+        margin-top: 0;
+        margin-bottom: 0;
+        background-color: var(--brand-color); 
+        background-image: linear-gradient( rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7) ), url(../images/hero-428-min.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        padding-top: 188px;
+        padding-bottom: 188px;
+        text-align: center;
+        max-width: 1440px;
+        margin: 0 auto;
+        }
+
+     @media screen and (min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
+        .hero{
+            background-image: linear-gradient( rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7) ), url(../images/hero-428-@2-min.jpg);
+        }
+     }
     
+     .hero-title {
+        color: #ffffff;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 1.11;
+        text-align: center;
+        letter-spacing: 0.02em;
+        text-transform: capitalize;
+        margin: 0 auto;
+        margin-bottom: 48px;
+        }
+
+        .btn-hero {
+            color: var(--background);
+            background-color: var(--accent-color);
+            font-family: "Roboto", sans-serif;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 1.5;
+            align-items: center;
+            letter-spacing: 0.04em;
+            cursor: pointer;
+            display: block;
+            margin: 0 auto;
+            padding: 16px 32px;
+            border: 0px solid transparent;
+            border-radius: 4px;
+            
+          }
+        
+          .active-btn{
+            transition: var(--timing-cubic);
+          }
+          
+          .active-btn:hover,
+          .active-btn:active,
+          .active-btn:focus {
+            color: var(--background);
+            background-color: var(--hover-color);
+           
+          }
+        
 }
 
-/* HEADER FOR TABLET */
+  
+
+
+/* FOR TABLET */
 
 @media screen and (min-width:768px) and (max-width:1158px) {
     .menu-btn{
@@ -427,6 +498,75 @@ letter-spacing: 0.02em;
             .address-link:not(last-child){
                 padding-bottom: 12px;
             }
+
+
+     /* hero tablet */
+   
+     .hero {
+        margin-top: 0;
+        margin-bottom: 0;
+        background-color: var(--brand-color); 
+        background-image: linear-gradient( rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7) ), url(../images/hero-768-min.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        padding-top: 188px;
+        padding-bottom: 188px;
+        text-align: center;
+        max-width: 1440px;
+        margin: 0 auto;
+        }
+
+    @media screen and (min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
+        .hero{
+            background-image: linear-gradient( rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7) ), url(../images/hero-768@2x-min.jpg) ;
+        }
+    }
+
+    .hero-title {
+        color: var(--background);
+        font-style: normal;
+        font-weight: 700;
+        font-size: 56px;
+        line-height: 1.07;
+        letter-spacing: 0.02em;
+        text-align: center;
+        margin: 0 auto;
+        margin-bottom: 48px;
+        }
+
+        .btn-hero {
+            color: var(--background);
+            background-color: var(--accent-color);
+            font-family: "Roboto", sans-serif;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 1.5;
+            letter-spacing: 0.04em;
+            text-align: center;
+            cursor: pointer;
+            display: block;
+            margin: 0 auto;
+            padding: 16px 32px;
+            border: 0px solid transparent;
+            border-radius: 4px;
+            min-width: 169px;
+          }
+        
+          .active-btn{
+            transition: var(--timing-cubic);
+          }
+          
+          .active-btn:hover,
+          .active-btn:active,
+          .active-btn:focus {
+            color: var(--background);
+            background-color: var(--hover-color);
+           
+          }
+        
+
 
             
 }
@@ -578,6 +718,69 @@ letter-spacing: 0.02em;
     
     }
     
+    /* hero desktop */
+
+    .hero {
+        margin-top: 0;
+        margin-bottom: 0;
+        background-color: var(--brand-color); 
+        background-image: linear-gradient( rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7) ), url(../images/people-office\ 1\ \(1\).jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        padding-top: 188px;
+        padding-bottom: 188px;
+        text-align: center;
+        max-width: 1440px;
+        margin: 0 auto;
+        }
+   
+        @media screen and (min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
+            .hero{
+                background-image: linear-gradient( rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7) ), url(../images/hero-1440@2x-min.jpg);
+            }
+         }
+
+         .hero-title {
+            color: var(--hero-title-buttons);
+            font-weight: 700;
+            font-size: 56px;
+            line-height: 1.07;
+            letter-spacing: 0.02em;
+            max-width: 496px;
+            text-align: center;
+            margin: 0 auto;
+            margin-bottom: 48px;
+            
+          }
+          .btn-hero {
+            color: var(--hero-title-buttons);
+            background-color: var(--accent-color);
+            font-family: "Roboto", sans-serif;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 1.5;
+            letter-spacing: 0.04em;
+            cursor: pointer;
+            display: block;
+            margin: 0 auto;
+            padding: 16px 32px;
+            border: 0px solid transparent;
+            border-radius: 4px;
+            min-width: 169px;
+          }
+        
+          .active-btn{
+            transition: var(--timing-cubic);
+          }
+          
+          .active-btn:hover,
+          .active-btn:active,
+          .active-btn:focus {
+            color: var(--hero-title-buttons);
+            background-color: var(--hover-color);
+           
+          }
     
     
 }
