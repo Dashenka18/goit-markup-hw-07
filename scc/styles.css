@@ -1,4 +1,129 @@
 /* /* header */
+
+.hero {
+    margin-top: 0;
+    margin-bottom: 0;
+    background-color: var(--brand-color); 
+    background-image: linear-gradient( rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7) ), url(../images/hero-428-min.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding-top: 188px;
+    padding-bottom: 188px;
+    text-align: center;
+    
+    margin: 0 auto;
+    }
+
+ @media screen and (min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
+    .hero{
+        background-image: linear-gradient( rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7) ), url(../images/hero-428-@2-min.jpg);
+    }
+ }
+
+ .hero-title {
+    color: #ffffff;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;
+    text-align: center;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    margin: 0 auto;
+    margin-bottom: 48px;
+    }
+
+    .btn-hero {
+        color: var(--background);
+        background-color: var(--accent-color);
+        font-family: "Roboto", sans-serif;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.5;
+        align-items: center;
+        letter-spacing: 0.04em;
+        cursor: pointer;
+        display: block;
+        margin: 0 auto;
+        padding: 16px 32px;
+        border: 0px solid transparent;
+        border-radius: 4px;
+        
+      }
+    
+      .active-btn{
+        transition: var(--timing-cubic);
+      }
+      
+      .active-btn:hover,
+      .active-btn:active,
+      .active-btn:focus {
+        color: var(--background);
+        background-color: var(--hover-color);
+       
+      }
+
+
+/*  */
+
+
+.menu-btn{
+    display: inline-flex;
+    position: absolute;
+    top: 0;
+    right: 0;
+    
+    cursor: pointer;
+    margin: 0;
+    padding-top: 24px;
+    padding-right: 16px;
+    padding-bottom: 24px;
+    border: none;
+    background-color: transparent;
+}
+
+.menu{
+    width: 32px;
+    height: 22px;
+}
+
+
+.menu-container-modal{
+    position: absolute;
+    
+    z-index: 100;
+    top:0;
+    left: 0; 
+    width: 100%;
+    height: 800px;  
+    background-color: var(--background);
+    filter: drop-shadow(0px 1px 3px rgba(0, 0, 0, 0.12)) drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.2)) drop-shadow(0px 1px 1px rgba(0, 0, 0, 0.14));
+    transition: opacity var(--timing-cubic);
+
+}
+
+
+.menu-container-modal.is-open{
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transition: opacity var(--timing-cubic) ;
+}
+
+
+.menu-container-modal .header-nav, .menu-container-modal .header-address-menu{
+    display: block;
+    
+    top: 0;
+    left: 0;
+   
+    font-size: 10px;
+}
+
+
+
 .container{
     margin-left: auto;
     margin-right: auto;
@@ -39,99 +164,6 @@
     align-items: center;
     }
 
-.header-nav{
-    margin: 0 auto;
-    display: flex;
-    gap: 40px;
-   
-    
-}
-    .nav-link.line::after{
-    position: absolute;
-    content: "";
-    left:0;
-    top: 44px;
-    display: block;
-    width: 100%;
-    height: 4px;
-    
-    background-color: var(--hover-color);
-    border-radius: 2px;
-    }
-
-    .nav-link.line{
-        color: var(--hover-color);
-    }
-
-
-
-.nav-link {
-    position: relative;
-     color: var(--brand-color);
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
-  transition: color var(--timing-cubic);
-
-}
-
-.nav-link::after{
-    content:'';
-    width: 64px;
-    height: 4px;
-    background-color: var(--accent-color);
-}
-
-
-
-
-
-.header-container{
-    display: flex;
-    align-items: center;
-    
-    }
-    
-
-address {
-    font-style: normal;
-  }
-
-.header-address{
-    display: flex;
-    margin: 0 auto;
-    gap: 40px;
- }
-
-
-
-
-.address-link{
-    
-    
-   
-    color: var(--primary-text-color);
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 1.5;
-    
-}
-
-.adr-list{
-    margin-left: auto;
-    font-style: normal;
-}
-
-.active{
-    transition: var(--timing-cubic);
-}
-
-.active:hover, .active:focus{
-    color: var(--hover-color);
-    
-
-}
 
 
 
